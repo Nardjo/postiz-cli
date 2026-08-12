@@ -1,0 +1,37 @@
+{
+  "name": "postiz-cli",
+  "version": "0.1.0",
+  "description": "Agent-ready CLI for the Postiz public API — social scheduling, integrations, uploads, analytics. Made with api2cli.dev",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nardjo/postiz-cli.git"
+  },
+  "keywords": [
+    "postiz",
+    "cli",
+    "social",
+    "social-media",
+    "scheduling",
+    "api2cli",
+    "api2cli.dev",
+    "integrations",
+    "analytics"
+  ],
+  "license": "MIT",
+  "bin": {
+    "postiz-cli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outfile dist/index.js --target bun",
+    "dev": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "commander": "^13.0.0",
+    "picocolors": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.7.0"
+  }
+}
